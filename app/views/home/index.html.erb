@@ -1,0 +1,10 @@
+<h1>Books</h1>
+<ul>
+  <% Book.all.each do |book| %>
+    <li><%= book.name %></li>
+  <% end %>
+</ul>
+
+<p>
+  <%= link_to "Start your order", new_order_path %>
+</p>

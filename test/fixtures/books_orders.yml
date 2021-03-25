@@ -1,0 +1,15 @@
+one:
+  order_id: 1
+  book_id: 1
+
+two:
+  order_id: 1
+  book_id: 3
+
+three:
+  order_id: 2
+  book_id: 2
+
+four:
+  order_id: 2
+  book_id: 3

@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<h1>Order <%= @order.id%></h1>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @order.customer %>
+</p>
+<h2>Books</h2>
+<ul>
+  <% @order.books.each do | book | %>
+    <li> <%= book.name %> <%= book.price %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: Book 1
+  price: 9.98
+
+two:
+  id: 2
+  name: Book 2
+  price: 1.49
+
+three:
+  id: 3
+  name: Book 3
+  price: 15.70
