@@ -12,17 +12,17 @@ covered by the test is very basic, the versions hardly come in.
 Tip: All fixes are one-liners. You might find that one failure is much
 more difficult to fix than all the others.
 
-# Sample run through:
+# Sample run through
 
     $ bundle install
     $ cp config/database.yml.sample config/database.yml # Adjust as required for unusual cases
     $ bundle exec rake db:test:prepare
     $ bundle exec rake 
 
-# Test output
+# Test output, before fixing tests
 
-To be clear, this is before fixing tests.
-
+    $ bundle exec rake 
+    Run options: --seed 79545
     # Running:
     
     F
@@ -119,3 +119,16 @@ To be clear, this is before fixing tests.
     
     Finished in 0.903100s, 25.4678 runs/s, 43.1846 assertions/s.
     23 runs, 39 assertions, 7 failures, 2 errors, 0 skips
+
+# Test output, after fixing tests
+
+    $ bundle exec rake 
+    Run options: --seed 29231
+    
+    # Running:
+    
+    .......................
+    
+    Finished in 0.903488s, 25.4569 runs/s, 59.7684 assertions/s.
+    23 runs, 54 assertions, 0 failures, 0 errors, 0 skips
+
