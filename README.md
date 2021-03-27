@@ -15,6 +15,7 @@ more difficult to fix than all the others.
 # Sample run through:
 
     $ bundle install
+    $ cp config/database.yml.sample config/database.yml # Adjust as required for unusual cases
     $ bundle exec rake db:test:prepare
     $ bundle exec rake 
 
